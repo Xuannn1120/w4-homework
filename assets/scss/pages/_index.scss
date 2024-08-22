@@ -1,0 +1,294 @@
+.banner {
+  background-image: url("/assets/images/home-header.png");
+  background-size: cover;
+  height: calc(100vh - 80px);
+  @include pad {
+    background-image: url(/assets/images/home-header-sm.png);
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+  }
+
+  &-content {
+    height: calc(100vh - 80px);
+  }
+  h1 {
+    font-size: 64px;
+    color: $secondary;
+    padding-bottom: 4px;
+    @include mobile-larger {
+      font-size: 36px;
+    }
+  }
+  h2 {
+    font-size: 36px;
+    color: $secondary;
+    @include mobile-larger {
+      font-size: 24px;
+    }
+  }
+  &-btn {
+    width: 104px;
+    height: 41px;
+    background-color: $primary;
+  }
+  a:hover {
+    background-color: $secondary;
+    font-weight: bold;
+  }
+}
+
+.feature {
+  background-color: $bg-light;
+  h3 {
+    padding-top: 80px;
+    padding-bottom: 24px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .card-row {
+    margin-right: -12px;
+    margin-left: -12px;
+    padding-bottom: 80px;
+  }
+  .column {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  h3 {
+    color: $secondary;
+    @include mobile {
+      font-size: 23px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    color: $secondary;
+    font-weight: bold;
+  }
+  @include pad {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @include mobile {
+    .container {
+      max-width: 375px;
+    }
+  }
+}
+
+.classical {
+  h3 {
+    color: #650300;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  h4 {
+    font-size: 48px;
+    color: #aa0601;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .card-row {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-bottom: 80px;
+  }
+  .column {
+    width: 33.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  @include pad {
+    .container {
+      max-width: 375px;
+    }
+  }
+}
+
+.cooperate {
+  background-image: url("/assets/images/index-bg.png");
+  background-size: cover;
+  max-width: 100%;
+  @include pad {
+    background-image: url("/assets/images/index-bg-md.png");
+    background-size: cover;
+    max-width: 100%;
+  }
+  @include mobile {
+    background-image: url("/assets/images/index-bg-sm.png");
+    background-size: cover;
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 48px;
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .column {
+    width: 50%;
+    padding-bottom: 80px;
+    @include pad {
+      width: 100%;
+    }
+  }
+  h4 {
+    color: $primary;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    background-color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .border-r {
+    border-right: 1px solid #dee2e6;
+  }
+  @include pad {
+    .container {
+      max-width: 696px;
+    }
+  }
+  @include mobile {
+    .container {
+      max-width: 375px;
+    }
+  }
+}
+
+.recommend {
+  h3 {
+    color: $secondary;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  &-card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .card-row {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .card {
+    border: 1px #dee2e6 solid;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .column {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 80px;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    &-body {
+      padding: 16px;
+    }
+    &-text {
+      margin-bottom: 72px;
+    }
+    &-name {
+      margin-bottom: 8px;
+    }
+  }
+  time {
+    color: #707070;
+    font-size: 14px;
+    margin-top: auto;
+  }
+}
+
+.contact {
+  background-color: $bg-light;
+  .container {
+    max-width: 636px;
+    @include pad {
+      max-width: 576px;
+    }
+    @include mobile {
+      max-width: 348px;
+    }
+  }
+  .card-row {
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+  h3 {
+    color: #650300;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 20px;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  .box {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    height: 136px;
+  }
+  .check-btn1 {
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+  .check-btn2 {
+    width: 416px;
+    height: 56px;
+    background-color: $primary;
+    color: #ffffff;
+    @include mobile {
+      width: 348px;
+    }
+  }
+  .check-btn2:hover {
+    background-color: $secondary;
+    font-weight: bold;
+  }
+}

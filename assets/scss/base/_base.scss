@@ -1,0 +1,25 @@
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans TC", sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}

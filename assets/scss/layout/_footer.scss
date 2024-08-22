@@ -1,0 +1,74 @@
+.footer {
+  background-color: $primary;
+  &-r img {
+    width: 48px;
+    height: 48px;
+    @include mobile-larger {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .call-mail {
+    font-size: 36px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @include mobile-larger {
+      font-size: 16px;
+    }
+    @include mobile-larger {
+      padding-top: 0px;
+    }
+    span {
+      font-size: 36px;
+      color: #ffffff;
+      @include mobile-larger {
+        font-size: 24px;
+      }
+    }
+  }
+  .copyright {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+  }
+  &-b {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  a {
+    color: #ffffff;
+  }
+  a:hover {
+    color: $secondary;
+    font-weight: bold;
+  }
+  @include mobile-larger {
+    &-nav {
+      display: none;
+    }
+    &-smt {
+      padding-top: 24px;
+    }
+    &-r li {
+      padding-left: 8px;
+    }
+    &-b {
+      flex-direction: column;
+      padding-top: 8px;
+      ul {
+        flex-direction: column;
+      }
+      li {
+        padding-left: 0px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  @include pad {
+    .container {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+}
